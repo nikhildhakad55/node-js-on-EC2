@@ -1,0 +1,10 @@
+version: '3.9' # Specify the Docker Compose version
+
+services:
+  node-app:
+    build:
+      context: . # Use the current directory for the build context
+      dockerfile: Dockerfile # Specify the Dockerfile to use
+    ports:
+      - "3000:3000" # Map host port 3000 to container port 3000
+
